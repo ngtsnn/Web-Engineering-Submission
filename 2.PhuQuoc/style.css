@@ -1,0 +1,53 @@
+.brg-img {
+    background-image: url(./images/hoang-hon-phu-quoc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+    margin-top: 120px;
+}
+
+.title {
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.answer{
+    color: #FFF;
+    text-indent: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.question{
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.qs-red{
+    color: #ff0000;
+}
+
+.qs-blue{
+    color: #0000ff;
+}
+
+.qs-violet{
+    color: #ff00ff;
+}
+
+.qs-green{
+    color: #00ff00;
+}
+
+.qs-brown{
+    color: #ff9900;
+}
+
+.italic{
+    font-style: italic;
+}

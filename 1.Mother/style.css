@@ -1,0 +1,22 @@
+.header{
+    width: 100%;
+    background-color: pink;
+    height: 100px;
+}
+
+.header h1{
+    text-align: center;
+    padding-top: 30px;
+    color: #FF0099;
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+}
+
+p{
+   text-align: center;
+}
+
