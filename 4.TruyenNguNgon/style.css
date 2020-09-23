@@ -1,0 +1,46 @@
+.para{
+    display: flex;
+}
+
+.title{
+    border: double 5px #00FF00;
+    padding: 10px;
+    text-align: center;
+    color: #FF0000;
+}
+
+.word-art-huge{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: #00FF00;
+}
+
+.text-highlight{
+    background-color: #FF0000;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;    
+}
+
+.comment-section{
+    margin-bottom: 10px;
+}
+
+.comment-title{
+    background-color: #00FF00;
+    text-align: right;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    float: right;
+
+}
+
+
+
+
