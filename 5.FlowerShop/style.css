@@ -8,8 +8,8 @@ body{
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
+    font-family: Arial;
 }
-
 
 .title{
     margin-top: 50px;
@@ -17,5 +17,30 @@ body{
     font-family: wedding;
     color: #FFFFFF;
     text-shadow: 2px 2px 5px #FF0099;
+    font-size: 40px;
 
 }
+
+.container{
+    margin-top: 40px;
+}
+
+.menu{
+    width: 40%;
+    margin-left: 500px;
+}
+
+.menu-item-text{
+    background-color: #FF0099;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.list-purple-flower{
+    list-style-image: url("images/bullet-hoa-tim.png");
+}
+
+.list-circle-flower{
+    list-style-image: url("images/bullet-tron-hong.png");
+}
+
