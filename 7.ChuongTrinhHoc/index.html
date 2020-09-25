@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương trình học</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- title  -->
+      <h1 class="title">CHƯƠNG TRÌNH HỌC THIẾT KẾ ĐỒ HỌA</h1>
+
+      <!-- table  -->
+      <table>
+        <thead>
+          <tr class="table-row-green">
+            <th rowspan="2">STT</td>
+            <th rowspan="2">TÊN MÔN HỌC</td>
+            <th colspan="2">SỐ TIẾT</td>
+          </tr>
+          <tr class="table-row-green">
+            <th>Lý thuyết</td>
+            <th>thực hành</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="num num-type" ></td>
+            <td> Thiết kế mẫu với CorelDraw </td>
+            <td class="num-type"> 30 </td>
+            <td class="num-type"> 60 </td>
+          </tr>
+          <tr>
+            <td class="num num-type" ></td>
+            <td> Thiết kế mẫu với Illustrator  </td>
+            <td class="num-type"> 30 </td>
+            <td class="num-type"> 60 </td>
+          </tr>
+          <tr>
+            <td class="num num-type" ></td>
+            <td> Xử lý ảnh với Photoshop </td>
+            <td class="num-type"> 30 </td>
+            <td class="num-type"> 60 </td>
+          </tr>
+          <tr>
+            <td class="num num-type" ></td>
+            <td> Mỹ thuật ứng dụng </td>
+            <td class="num-type"> 30 </td>
+            <td class="num-type"> 30 </td>
+          </tr>
+          <tr>
+            <td class="num num-type" ></td>
+            <td> Nghệ thuật chữ </td>
+            <td class="num-type"> 30 </td>
+            <td class="num-type"> 30 </td>
+          </tr>
+          <tr>
+            <td class="num num-type" ></td>
+            <td> Layout web </td>
+            <td class="num-type"> 30 </td>
+            <td class="num-type"> 30 </td>
+          </tr>
+          <tr>
+            <td class="num num-type" ></td>
+            <td> Thiết kế bộ nhận diện thương hiệu </td>
+            <td class="num-type"> 30 </td>
+            <td class="num-type"> 60 </td>
+          </tr>
+          <tr>
+            <td class="num num-type" ></td>
+            <td> Khóa luận tốt nghiệp </td>
+            <td class="num-type"></td>
+            <td class="num-type"> 150 </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+
+    <script>
+      let tbody = document.querySelector('tbody')
+      let trows = tbody.querySelectorAll('tr')
+
+      for(var i = 0; i < trows.length; i++){
+        let num = trows[i].querySelector('.num')
+        num.innerHTML = i + 1
+        let tdata = trows[i].querySelectorAll('td')
+
+        if (i%2){
+          trows[i].setAttribute('class', 'table-row-blue')
+        }
+        
+        if(i == trows.length - 1){
+          trows[i].setAttribute('class', 'table-row-brown')
+        }
+      }
+    </script>
+  </body>
+</html>
