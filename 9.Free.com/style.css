@@ -1,0 +1,85 @@
+body{
+    background: blue;
+    margin: 0;
+    color: #1100ffe7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 80%;
+    background-color: #ffffff;
+    background-size: 100%;
+    height: max-content;
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+.img, .logo-header{
+    width: fit-content;
+    margin: auto;
+}
+
+.banner{
+    margin-top: 4%;
+}
+
+.content{
+    width: 90%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.logo-join{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.join{
+    width: 50%;
+}
+
+.join-content{
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.contact{
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.mail{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.mail:visited{
+    color: #ff0000;
+    text-decoration: underline; 
+}
+
+.small-logos{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    margin-top: 4%;
+}
+
+.small-logo{
+    width: 33%;
+}
+
+.copyright{
+    text-align: center;
+    width: 90%;
+    color: #000000;
+    margin: auto;
+    margin-top: 1%;
+}
