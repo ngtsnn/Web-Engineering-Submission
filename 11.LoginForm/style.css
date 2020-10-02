@@ -1,0 +1,65 @@
+.container{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    margin-top: 15%;
+    border: dashed 2px #ff0000;
+    align-items: center;
+    border-radius: 10px;
+    background-image: url('images/login.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 5%;
+}
+
+.title{
+    text-align: center;
+    color: #ff0000;
+}
+
+.label{
+    min-width: 110px;
+    width: 40%;
+    text-align: right;
+    margin-right: 10px;
+    float: left;
+
+}
+
+.input-row{
+    margin-top: 2%;
+}
+
+input{
+    width: fit-content;
+    border-radius: 100px;
+    border: dashed 2px #ff0000;
+    margin: auto;
+    background-color: rgba(255, 0, 0, .2);
+    color: #000000;
+    font-weight: bold;
+}
+
+input[type=button]{
+    border-radius: 100px;
+    border: solid 1p lightgrey;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    box-shadow: grey 2px 2px;
+}
+
+.m-auto{
+    width: fit-content;
+    margin: auto;
+}
+
+.p-top{
+    padding-top: 1%;
+}
+
+.hello-saying{
+    text-align: center;
+    color: #ff0000;
+}
+

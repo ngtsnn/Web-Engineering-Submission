@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đăng nhập</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title"> Form đăng nhập </h1>
+      <form action="" method="POST" class="form">
+        <div class="input-row">
+          <label for="username" class="label"> Tên người dùng: </label>
+          <div class="bg-red">
+            <input type="text" id="username" placeholder="Tên người dùng" onchange="SayHello()">
+          </div>
+        </div>
+        <div class="input-row">
+          <label for="password" class="label"> Mật khẩu: </label>
+          <input type="password" id="password" placeholder="Mật khẩu" />
+        </div>
+        <div class="m-auto p-top">
+          <input type="button" class="m-auto" value="Đăng nhập"/>
+        </div>
+        <p class="hello-saying" id="hello-saying">Chào bạn </p>
+      </form>
+    </div>
+
+    <script>
+      function SayHello(){
+        let username = document.getElementById("username")
+        let helloSaying = document.getElementById("hello-saying")
+        if (username.value) {
+          helloSaying.innerHTML = `Chào bạn <b> ${username.value} </b>`
+        } else {
+          helloSaying.innerText = "Chào bạn"
+        }
+      }
+    </script>
+  </body>
+</html>
