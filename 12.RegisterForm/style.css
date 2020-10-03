@@ -1,0 +1,95 @@
+.container{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    box-shadow: 5px 5px 5px 1px #0000ff;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(4, 202, 251, 0.2);
+    background-image: url('images/khuyen-mai.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #0000ff;
+    font-weight: bold;
+    min-width: 300px;
+}
+
+.title{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #0000ff;
+}
+
+.label{
+    min-width: 200px;
+    width: 30%;
+    text-align: right;
+    float: left;
+    height: inherit;
+    vertical-align: middle;   
+}
+
+.label-gender{
+    width: 30%;
+    min-width: 100px;
+}
+
+.input-row{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+input{
+    width: fit-content;
+    border-radius: 100px;
+    border: dashed 2px #0000ff;
+    background-color: rgba(0, 0, 255, .2);
+    color: #000000;
+    font-weight: bold;
+    margin: auto;
+    margin-left: 10px;
+}
+
+textarea, select{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    min-width: 200px;
+    border-radius: 10px;
+    border: dashed 2px #0000ff;
+    background-color: rgba(0, 0, 255, .2);
+    color: #000000;
+    font-weight: bold;
+    margin: auto;
+    margin-left: 10px;
+}
+
+select{
+    width: min-content;
+}
+
+input[type=button]{
+    border-radius: 100px;
+    border: solid 1p lightgrey;
+    background-color: red;
+    font-weight: bold;
+    box-shadow: grey 2px 2px;
+}
+
+.m-auto{
+    width: fit-content;
+    margin: auto;
+}
+
+.p-top{
+    padding-top: 1%;
+}
+
+#success{
+    text-align: center;
+    color: #cc00ff;
+    font-style: italic;
+
+}
+

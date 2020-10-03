@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phiếu đăng ký tham gia chương trình khuyến mãi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title"> Phiếu đăng ký tham gia chương trình khuyến mãi </h1>
+    <div class="container" id="container">
+      <form action="" method="POST" class="form">
+        <!--name-->
+        <div class="input-row">
+          <label for="name" class="label"> Họ tên: </label>
+          <input type="text" id="name" placeholder="Họ tên" onchange="SayHello()"/>
+        </div>
+        <!--address-->
+        <div class="input-row">
+          <label for="address" class="label"> Địa chỉ: </label>
+          <textarea name="address" id="address" cols="50" rows="10" placeholder="Địa chỉ"></textarea>
+        </div>
+        <!--tel-->
+        <div class="input-row">
+          <label for="tel" class="label"> Điện thoại: </label>
+          <input type="tel" name="tel" id="tel" placeholder="Điện thoại"/>
+        </div>
+        <!--gender-->
+        <div class="input-row">
+          <label for="gender" class="label label-gender"> Giới tính: </label>
+          <input type="radio" name="gender" id="gender"> Nam 
+          <input type="radio" name="gender" id="gender"> Nữ 
+        </div>
+        <!--job-->
+        <div class="input-row">
+          <label for="job" class="label"> Nghề nghiệp: </label>
+          <select name="job" id="job">
+            <option value="Bác sĩ "> Bác sĩ  </option>
+            <option value="Kỹ sư "> Kỹ sư  </option>
+            <option value="Giáo viên "> Giáo viên  </option>
+            <option value="Khác"> Khác </option>
+          </select>
+        </div>
+        <!--products-->
+        <div class="input-row">
+          <label for="products" class="label"> Chọn sản phẩm tham gia: </label>
+          <select name="products" id="products" multiple="multiple">
+            <option value="Kem đánh răng"> Kem đánh răng </option>
+            <option value="Bột giặt"> Bột giặt </option>
+            <option value="Dầu gội đầu"> Dầu gội đầu </option>
+            <option value="Sữa tắm"> Sữa tắm </option>
+          </select>
+        </div>
+        <!--quantity-->
+        <div class="input-row">
+          <label for="quantity" class="label"> Số người dự đoán tham gia: </label>
+          <input type="number" id="quantity" placeholder="Số người tham gia" onchange="SayHello()"/>
+        </div>
+        <!--submit-->
+        <div class="m-auto p-top">
+          <input type="button" class="m-auto" id="submit" value="Đồng ý"/>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const submitBtn = document.querySelector('#submit')
+      const Succeed = () =>{
+        let container = document.getElementById('container')
+        container.innerHTML += `<p id="success"> Bạn đã đăng kí thành công !!! </p>`
+        this.removeEventListener('click', Succeed)
+      }
+
+      submitBtn.addEventListener('click', Succeed)
+    </script>
+  </body>
+</html>
