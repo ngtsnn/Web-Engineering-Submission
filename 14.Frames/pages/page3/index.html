@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập HTML</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="banner">
+      <h1 class="title"> Bài tập Ngôn Ngữ HTML </h1>
+    </div>
+    <div class="content">
+      <div class="menu">
+        <base target="menu"/>
+        <a href="../../../1.Mother/index.html" class="menu-item">Mẹ</a>
+        <a href="../../../2.PhuQuoc/index.html" class="menu-item">Phú quốc</a>
+        <a href="../../../3.TextFormat/index.html" class="menu-item">Định dạng văn bản</a>
+        <a href="../../../4.TruyenNguNgon/index.html" class="menu-item">Truyện ngụ ngôn</a>
+        <a href="../../../5.FlowerShop/index.html" class="menu-item">Shop bán hoa</a>
+        <a href="../../../6.ExciteHome/index.html" class="menu-item">Excite Home</a>
+        <a href="../../../7.ChuongTrinhHoc/index.html" class="menu-item">Chương trình học</a>
+        <a href="../../../8.DoubleRich/index.html" class="menu-item">Double Rich</a>
+        <a href="../../../9.Free.com/index.html" class="menu-item">Free.com</a>
+        <a href="../../../10.VietNam/page/home/index.html" class="menu-item">Việt Nam</a>
+        <a href="../../../11.LoginForm/index.html" class="menu-item">Form đăng nhập</a>
+        <a href="../../../12.RegisterForm/index.html" class="menu-item">Phiếu đăng kí</a>
+        <a href="../../../13.BookTour/index.html" class="menu-item">Đặt tour</a>
+      </div>
+      <iframe name="menu" rows='130,*' frameborder="0" class="frame"></iframe>
+    </div>
+
+    <script>
+      let links = document.querySelectorAll('a')
+      
+      if (links.length > 1){
+        links.forEach(link => {
+          link.addEventListener('click', () => {
+            //unactivate the active link
+            activeLink = document.querySelector('.active')
+            console.log(activeLink)
+            if(activeLink != null){
+              activeLink.setAttribute('class', 'menu-item')
+            }
+            //active clicked link
+            link.setAttribute('class', 'menu-item active')
+          })
+        })
+      }
+    </script>
+  </body>
+</html>
