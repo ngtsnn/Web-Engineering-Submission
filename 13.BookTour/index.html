@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ĐĂNG KÝ DU LỊCH</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">ĐĂNG KÝ DU LỊCH</h1>
+    <div class="container">
+      <form action="" method="POST" class="form">
+        <table>
+          <!--name-->
+          <tr>
+            <th>
+              <label for="name"> Họ tên </label>
+            </th>
+            <td>
+              <input type="text" placeholder="Họ tên" id="name" />
+            </td>
+          </tr>
+          <!--address-->
+          <tr>
+            <th>
+              <label for="address"> Địa chỉ </label>
+            </th>
+            <td>
+              <textarea name="address" id="address" cols="50" rows="10"></textarea>
+            </td>
+          </tr>
+          <!--tel-->
+          <tr>
+            <th>
+              <label for="tel"> Điện thoại </label>
+            </th>
+            <td>
+              <input type="tel" placeholder="Điện thoại" id="tel" />
+            </td>
+          </tr>
+          <!--dosmetic-->
+          <tr>
+            <th>
+              <label for="dosmetic"> Khách Việt Nam </label>
+            </th>
+            <td>
+              <input type="checkbox" placeholder="Điện thoại" id="dosmetic" />
+            </td>
+          </tr>
+          <!--tour-->
+          <tr>
+            <th>
+              <label for="tour"> Chọn tour </label>
+            </th>
+            <td>
+              <select name="tour" id="tour">
+                <optgroup label="Miền Bắc">
+                  <option value="Hà Nội - Hạ Long - Sapa"> Hà Nội - Hạ Long - Sapa </option>
+                  <option value="Hà Nội - Chùa Hương - Ninh Bình"> Hà Nội - Chùa Hương - Ninh Bình </option>
+                  <option value="Hà Nội - Cát Bà - Tuần Châu"> Hà Nội - Cát Bà - Tuần Châu </option>
+                </optgroup>
+                <optgroup label="Miền Trung">
+                  <option value="Huế - Bạch Mã - Đà Nẵng"> Huế - Bạch Mã - Đà Nẵng </option>
+                  <option value="Nha Trang - Đà Lạt"> Nha Trang - Đà Lạt </option>
+                  <option value="Buôn Mê Thuột - Gia Lai - Kontum"> Buôn Mê Thuột - Gia Lai - Kontum </option>
+                </optgroup>
+                <optgroup label="Miền Nam">
+                  <option value="TpHCM - Cần Thơ - Cà Mau"> TpHCM - Cần Thơ - Cà Mau </option>
+                  <option value="Phú Quốc - Côn Đảo"> Phú Quốc - Côn Đảo </option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+          <!--transportation-->
+          <tr>
+            <th>
+              <label for="transportation"> Phương tiện </label>
+            </th>
+            <td>
+              <input type="radio" name="transportation" id="transportation" /> Máy bay 
+              <input type="radio" name="transportation" id="transportation" /> Xe du lịch
+            </td>
+          </tr>
+          <!--quantity-->
+          <tr>
+            <td colspan="2">
+              <fieldset>
+                <legend>Số lượng đoàn khách</legend>
+                <label for="adult"> Người lớn </label>
+                <input type="number" id="adult" placeholder="Số lượng" />
+                <label for="children"> Trẻ em </label>
+                <input type="number" id="children" placeholder="Số lượng" />
+              </fieldset>
+            </td>
+          </tr>
+          <!--note-->
+          <tr>
+            <th>
+              <label for="note"> Ghi chú thêm </label>
+            </th>
+            <td>
+              <textarea name="note" id="note" cols="50" rows="10"></textarea>
+            </td>
+          <!--submit-->
+          <tr>
+            <td colspan="2">
+              <div class="btn">
+                <input type="button" value="Đồng ý" id='submit'>
+              </div>
+            </td>
+          </tr>
+          <!--submit-->
+          <tr>
+            <td colspan="2">
+              <p id="success"></p>
+            </td>
+          </tr>
+
+        </table>
+      </form>
+    </div>
+
+    <script>
+      const submitBtn = document.querySelector("#submit");
+      const Succeed = () => {
+        let success = document.getElementById("success");
+        success.innerText += ` Bạn đã đăng kí thành công !!!`;
+        this.removeEventListener("click", Succeed);
+      };
+
+      submitBtn.addEventListener("click", Succeed);
+    </script>
+  </body>
+</html>
